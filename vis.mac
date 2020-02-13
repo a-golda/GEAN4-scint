@@ -1,0 +1,12 @@
+#/gun/particle gamma
+#/gun/position 0 0 3 cm
+#/gun/direction 0 0 1
+#/gun/energy 1.0 MeV 
+
+/vis/open OGL
+/vis/drawVolume
+
+/vis/scene/add/trajectories
+/vis/scene/endOfEventAction accumulate 100
+/run/setCut 1 mm
+
